@@ -1,0 +1,7 @@
+						Activity
+IMyClientCallback	↑				↓	IMyClient
+						Client
+IMyServiceCallback	↑				↓	IMyService
+						Service
+Observer			↑				↓	Socket, Http, SQLiteHelper...
+						Server
