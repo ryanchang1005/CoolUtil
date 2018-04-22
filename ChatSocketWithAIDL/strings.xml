@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChatSocket</string>
+
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect_error">Connect error</string>
+    <string name="connect_timeout">Connect timeout</string>
+    <string name="send">Send</string>
+    <string name="user_name">UserName</string>
+    <string name="login">Login</string>
+
+    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+</resources>
