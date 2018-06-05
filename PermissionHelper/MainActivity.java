@@ -1,6 +1,5 @@
-package idv.haojun.permissionsample;
+package idv.haojun.permissionhelper;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -12,54 +11,54 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.bt_camera).setOnClickListener(this);
-        findViewById(R.id.bt_storage).setOnClickListener(this);
-        findViewById(R.id.bt_location).setOnClickListener(this);
-        findViewById(R.id.bt_audio).setOnClickListener(this);
+        findViewById(R.id.bt_pick_file).setOnClickListener(this);
+        findViewById(R.id.bt_take_photo).setOnClickListener(this);
+        findViewById(R.id.bt_audio_call).setOnClickListener(this);
+        findViewById(R.id.bt_video_call).setOnClickListener(this);
     }
 
-    private void openCamera() {
-        if (!PermUtil.hasCameraPermission(this)) {
+    private void pickFile() {
+        if (!PermissionHelper.hasReadStoragePermission(this)) {
             return;
         }
-        Toast.makeText(this, "Using camera", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "pickFile", Toast.LENGTH_SHORT).show();
     }
 
-    private void openStorage() {
-        if (!PermUtil.hasStoragePermission(this)) {
+    private void takePhoto() {
+        if (!PermissionHelper.hasCameraPermission(this)) {
             return;
         }
-        Toast.makeText(this, "Using storage", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "takePhoto", Toast.LENGTH_SHORT).show();
     }
 
-    private void openLocation() {
-        if (!PermUtil.hasLocationPermission(this)) {
+    private void audioCall() {
+        if (!PermissionHelper.hasRecordAudioPermission(this)) {
             return;
         }
-        Toast.makeText(this, "Using location", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "audioCall", Toast.LENGTH_SHORT).show();
     }
 
-    private void openAudio() {
-        if (!PermUtil.hasAudioPermission(this)) {
+    private void videoCall() {
+        if (!PermissionHelper.hasCameraPermission(this) || !PermissionHelper.hasRecordAudioPermission(this)) {
             return;
         }
-        Toast.makeText(this, "Using audio", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "videoCall", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.bt_camera:
-                openCamera();
+            case R.id.bt_pick_file:
+                pickFile();
                 break;
-            case R.id.bt_storage:
-                openStorage();
+            case R.id.bt_take_photo:
+                takePhoto();
                 break;
-            case R.id.bt_location:
-                openLocation();
+            case R.id.bt_audio_call:
+                audioCall();
                 break;
-            case R.id.bt_audio:
-                openAudio();
+            case R.id.bt_video_call:
+                videoCall();
                 break;
         }
     }

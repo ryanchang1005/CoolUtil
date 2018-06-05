@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">PermissionSample</string>
-    <string name="permission_denied_camera">Need camera permission</string>
-    <string name="permission_denied_storage">Need storage permission</string>
-    <string name="permission_denied_location">Need location permission</string>
-    <string name="permission_denied_audio">Need audio permission</string>
-</resources>

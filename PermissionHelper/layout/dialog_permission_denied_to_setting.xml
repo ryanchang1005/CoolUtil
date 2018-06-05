@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/tv_dialog_nedd_to_setting_message"
+        android:id="@+id/tv_dialog_permission_denied_to_setting_message"
         android:layout_width="wrap_content"
+        android:layout_gravity="center"
         android:layout_height="wrap_content" />
-
     <Button
-        android:text="SETTING"
-        android:id="@+id/bt_dialog_nedd_to_setting_go_setting"
+        android:id="@+id/bt_dialog_permission_denied_to_setting_go_setting"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
