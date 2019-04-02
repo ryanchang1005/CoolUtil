@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="idv.haojun.pickortakepicturesample">
+    package="com.example.pickimagedemo">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -24,10 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="idv.haojun.pickortakepicturesample.SampleFileProvider"
+            android:authorities="${applicationId}.SampleFileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
