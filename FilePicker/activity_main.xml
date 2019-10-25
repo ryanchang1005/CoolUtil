@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickImage"
+        android:text="@string/image" />
+
+    <Button
+        android:id="@+id/btnPickVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickVideo"
+        android:text="@string/video" />
+
+    <Button
+        android:id="@+id/btnPickFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickFile"
+        android:text="@string/file" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp" />
+</LinearLayout>

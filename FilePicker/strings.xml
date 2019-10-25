@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FilePicker</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="file">File</string>
+    <string name="pick_image">Pick image</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="pick_video">Pick video</string>
+    <string name="pick_file">Pick file</string>
+    <string name="loading">Loading</string>
+</resources>
