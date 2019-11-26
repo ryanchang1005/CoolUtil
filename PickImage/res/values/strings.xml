@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PickImage</string>
+    <string name="from_gallery">From gallery</string>
+    <string name="from_camera">From camera</string>
+    <string name="pick_image_fail">Pick image fail</string>
+    <string name="confirm">Confirm</string>
+    <string name="permission_denied">Permission denied</string>
+</resources>
